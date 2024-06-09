@@ -1,9 +1,13 @@
 import React from 'react'
-import { Buttonontainer, CardContainer, IconContainer } from './Home.styled'
+import { Buttonontainer, CardContainer, IconContainer, ResultContainer} from './Home.styled'
 import iconStarImg from "../assets/icon-star.svg"
+import img2 from "../assets/illustration-thank-you.svg"
+
 export  function Home() {
+  let aprecerResultado = true
   return (
-    <CardContainer>
+    aprecerResultado === false ? (
+      <CardContainer>
     <IconContainer>
       <img src={iconStarImg} alt="icone de estrela" />
     </IconContainer>
@@ -18,5 +22,15 @@ export  function Home() {
     </Buttonontainer>
     <button>enviar</button>
     </CardContainer>
+    ): (
+      <CardContainer>
+          <img src={img2} alt="imagem de agradecimento" />
+          <ResultContainer>
+            <p>Você selecionou 3 de 5</p>
+            </ResultContainer>
+          <h1>Obrigado!</h1>
+          <p>Agradecemos por dedicar um momento para nos avaliar. Se precisar de mais suporte, não hesite em entrar em contato!</p>
+      </CardContainer>
+    )
   )
 }
