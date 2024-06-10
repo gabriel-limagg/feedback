@@ -57,7 +57,7 @@ export const IconContainer = styled.div`
  
 `
 
-export const Buttonontainer  = styled.div`
+export const ButtonContainer  = styled.div`
 margin-top: 2.4rem;
 margin-bottom: 3.2rem;
 display: flex;
