@@ -68,7 +68,7 @@ button{
     border-radius: 50%;
     border: none;
     background: ${props => props.theme.feedbackButtonColor};
-    color: ${props => props.theme.feedbackButonText};
+    color: ${props => props.theme.feedbackButton};
     font-weight: 700;
     line-height: 2.4rem;
     cursor: pointer;
@@ -76,7 +76,7 @@ button{
 
     &:focus{
         color: ${props => props.theme.white};
-        background: ${props => props.theme.feedbackButonText};
+        background: ${props => props.theme.feedbackButton};
     }
 
     &:hover {
